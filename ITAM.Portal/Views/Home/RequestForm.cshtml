@@ -1,0 +1,211 @@
+﻿
+@{
+    ViewBag.Title = "RequestForm";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!--内容页标题开始-->
+<section class="content-header">
+    <h1>
+        流程申请
+        <small>网络施工与布线</small>
+    </h1>
+
+</section>
+
+<section id="service-content" class="content">
+    <div class="nav-tabs-custom">
+        <!-- Tabs within a box -->
+        <ul class="nav nav-tabs pull-right ui-sortable-handle">
+            <li class=""><a href="#service-proxy" data-toggle="tab" aria-expanded="false">代人申请</a></li>
+            <li class="active"><a href="#service-current" data-toggle="tab" aria-expanded="true">本人申请</a></li>
+            <li class="pull-left header"><i class="fa fa-hand-paper-o"></i> 申请人信息</li>
+        </ul>
+        <div class="tab-content no-padding">
+            <div class="tab-pane" id="service-proxy">
+                <div class="box no-border">
+                    <div class="box-header">
+                        <h3 class="box-title"></h3>
+                        <div class="box-tools">
+                            <div class="input-group col-md-3 pull-right">
+                                <input type="text" name="table_search" class="form-control input-sm pull-right" placeholder="输入AD账号...">
+                                <div class="input-group-btn">
+                                    <button class="btn btn-sm btn-default"><i class="fa fa-search"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- /.box-header -->
+                    <div class="box-body table-responsive">
+                        <table class="table table-hover">
+                            <tbody>
+                                <tr>
+                                    <th>姓名</th>
+                                    <th>工号</th>
+                                    <th>邮箱</th>
+                                    <th>联系电话</th>
+                                    <th>岗位</th>
+                                    <th>部门</th>
+                                    <th>科室</th>
+                                </tr>
+                                <tr>
+                                    <td>彭爱霞</td>
+                                    <td>00020891</td>
+                                    <td>aixia.peng@faw-vw.com</td>
+                                    <td>+86-431-85120193</td>
+                                    <td>IT系统支持工程师</td>
+                                    <td>IT生产与系统支持部</td>
+                                    <td>IT基础设施科</td>
+                                </tr>
+                                <tr>
+                                    <td>彭爱霞</td>
+                                    <td>00020891</td>
+                                    <td>aixia.peng@faw-vw.com</td>
+                                    <td>+86-431-85120193</td>
+                                    <td>IT系统支持工程师</td>
+                                    <td>IT生产与系统支持部</td>
+                                    <td>IT基础设施科</td>
+                                </tr>
+                                <tr>
+                                    <td>彭爱霞</td>
+                                    <td>00020891</td>
+                                    <td>aixia.peng@faw-vw.com</td>
+                                    <td>+86-431-85120193</td>
+                                    <td>IT系统支持工程师</td>
+                                    <td>IT生产与系统支持部</td>
+                                    <td>IT基础设施科</td>
+                                </tr>
+                                <tr>
+                                    <td>彭爱霞</td>
+                                    <td>00020891</td>
+                                    <td>aixia.peng@faw-vw.com</td>
+                                    <td>+86-431-85120193</td>
+                                    <td>IT系统支持工程师</td>
+                                    <td>IT生产与系统支持部</td>
+                                    <td>IT基础设施科</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div><!-- /.box-body -->
+                </div>
+            </div>
+
+            <div class="tab-pane active" id="service-current">
+                <div class="box no-border">
+                    <div class="box-body">
+                        <div class="row">
+                            <div class="form-group col-md-3">
+                                <label>姓名</label>
+                                <input type="text" class="form-control" disabled value="于 瀛博">
+                            </div>
+
+                            <div class="form-group col-md-3">
+                                <label>工号</label>
+                                <input type="text" class="form-control" disabled value="00020890">
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label>联系电话</label>
+                                <input type="text" class="form-control" disabled value="+86-431-85120193">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-3">
+                                <label>岗位</label>
+                                <input type="text" class="form-control" disabled value="IT系统支持工程师">
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label>部门</label>
+                                <input type="text" class="form-control" disabled value="IT生产与系统支持部">
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label>科室</label>
+                                <input type="text" class="form-control" disabled value="IT基础设施科">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-8">
+                                <label>办公地点</label>
+                                <input type="text" class="form-control" disabled value="IT基础设施科">
+                            </div>
+                        </div>
+                    </div><!-- /.box-body -->
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="box box-success">
+        <div class="box-header with-border">
+            <h3 class="box-title"><i class="fa fa-file-text-o"></i> 申请单</h3>
+            <div class="box-tools pull-right">
+                <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+            </div>
+        </div>
+        <div class="box-body">
+            <blockquote class="danger" style="border-left:5px solid #ff0000">
+                <p class="text">
+                    1. 办公类网络请将安装位置精确到楼号与房间号，例如5号楼408房间；<br />
+                    2. 生产类请精确到柱号+工位号；<br />
+                    3. 网口数量限制为1-10个，超过10个请您按照项目进行申请；
+                </p>
+                <small class="text-red"><i class="icon fa fa-warning"></i> 提示信息</small>
+            </blockquote>
+            <div class="row">
+                <div class="form-group col-md-4">
+                    <label>申请类型 </label><br />
+                    <div class="btn-group" data-toggle="buttons">
+                        <label class="btn bg-orange">
+                            <input type="radio" checked name="options" id="option2" autocomplete="off"> 生产网
+                        </label>
+                        <label class="btn bg-orange">
+                            <input type="radio" name="options" id="option3" autocomplete="off"> 办公网
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-md-4">
+                    <label>上传附件</label><br />
+                    <button class="btn btn-default"><i class="fa fa-file-excel-o"></i> 上传附件</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-md-4">
+                    <label>布线位置</label>
+                    <input type="text" placeholder="例如：5号楼，3层，306房间" class="form-control">
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-md-4">
+                    <label>布线数量</label>
+                    <input type="text" placeholder="数字类型" class="form-control">
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="form-group col-md-8">
+                    <label>申请理由</label>
+                    <textarea class="form-control"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-md-3">
+                    <a class="btn btn-app">
+                        <i class="fa fa-save"></i> 暂存
+                    </a>
+
+                    <a class="btn btn-app" id="btn-submit">
+                        <i class="fa fa-paper-plane"></i> 提交
+                    </a>
+                </div>
+
+
+
+            </div>
+
+        </div>
+        <div class="overlay hidden">
+            <i class="fa fa-refresh fa-spin"></i>
+        </div>
+    </div>
+</section>
+

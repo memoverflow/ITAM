@@ -1,0 +1,357 @@
+﻿@{
+    ViewBag.Title = "一汽大众自助服务门户";
+}
+<!--内容页标题开始-->
+<section class="content-header">
+    <h1>
+        流程申请
+        <small>选择您需要申请的服务目录</small>
+        <div class="btn-group pull-right" id="service-flow" data-toggle="btn-toggle">
+            <button type="button" class="btn btn-default btn-sm active"><i class="fa fa-list"></i></button>
+            <button type="button" class="btn btn-default btn-sm"><i class="fa fa-th-large"></i></button>
+        </div>
+    </h1>
+</section>
+
+<!--内容页标题结束-->
+
+<!--流程分类开始-->
+
+<section id="service-content" class="content">
+    <div class="nav-tabs-custom">
+        <!-- Tabs within a box -->
+        <ul class="nav nav-tabs pull-right ui-sortable-handle">
+            <li class=""><a href="#service-system" data-toggle="tab" aria-expanded="true">系统类服务目录</a></li>
+            <li class=""><a href="#service-account" data-toggle="tab" aria-expanded="false">账号/权限类服务目录</a></li>
+            <li><a href="#service-resource" data-toggle="tab" aria-expanded="false">申请资源类服务目录</a></li>
+            <li class="active"><a href="#service-recent" data-toggle="tab" aria-expanded="false">最近申请服务目录</a></li>
+            <li class="pull-left header"><i class="fa fa-hand-paper-o"></i> 服务目录列表</li>
+        </ul>
+
+        <div class="tab-content no-padding">
+            <!-- Morris chart - Sales -->
+            <div class="tab-pane" id="service-system" >
+                <ul class="nav nav-stacked">
+                    <li><a href="#"  data-toggle="modal" data-target="#service-modal">IT公告通知服务 <span class="pull-right fa fa-chevron-right"></span></a></li>
+                    <li><a href="#"  data-toggle="modal" data-target="#service-modal">投诉与建议 <span class="pull-right fa fa-chevron-right"></span></a></li>
+                    <li><a href="#"  data-toggle="modal" data-target="#service-modal">审批代理人申请 <span class="pull-right fa fa-chevron-right"></span></a></li>
+                </ul>
+            </div>
+            <div class="tab-pane" id="service-account">
+                <ul class="nav nav-stacked">
+                    <li><a href="#"  data-toggle="modal" data-target="#service-modal"><i class="fa fa-file-text"></i> Dealer Portal/选建系统权限申请及变更<span class="pull-right fa fa-chevron-right"></span></a></li>
+                    <li><a href="#"  data-toggle="modal" data-target="#service-modal"><i class="fa fa-file-text"></i> FIS-IE系统权限申请及变更 <span class="pull-right fa fa-chevron-right"></span></a></li>
+                    <li><a href="#"  data-toggle="modal" data-target="#service-modal"><i class="fa fa-file-text"></i> EAP系统权限申请及变更 <span class="pull-right fa fa-chevron-right"></span></a></li>
+                    <li><a href="#"  data-toggle="modal" data-target="#service-modal"><i class="fa fa-file-text"></i> Nadcon系统权限申请及变更<span class="pull-right fa fa-chevron-right"></span></a></li>
+                    <li><a href="#"  data-toggle="modal" data-target="#service-modal"><i class="fa fa-file-text"></i> 网络施工与布线<span class="pull-right fa fa-chevron-right"></span></a></li>
+                    <li><a href="#"  data-toggle="modal" data-target="#service-modal"><i class="fa fa-file-text"></i> 网络施工与布线<span class="pull-right fa fa-chevron-right"></span></a></li>
+                    <li><a href="#"  data-toggle="modal" data-target="#service-modal"><i class="fa fa-file-text"></i> 工艺文件系统权限申请及变更<span class="pull-right fa fa-chevron-right"></span></a></li>
+                    <li><a href="#"  data-toggle="modal" data-target="#service-modal"><i class="fa fa-file-text"></i> 网络施工与布线<span class="pull-right fa fa-chevron-right"></span></a></li>
+                    <li><a href="#"  data-toggle="modal" data-target="#service-modal"><i class="fa fa-file-text"></i> SAP R/3系统权限申请及变更(非销售人员) <span class="pull-right fa fa-chevron-right"></span></a></li>
+                    <li><a href="#"  data-toggle="modal" data-target="#service-modal"><i class="fa fa-file-text"></i> 网络施工与布线<span class="pull-right fa fa-chevron-right"></span></a></li>
+                    <li><a href="#"  data-toggle="modal" data-target="#service-modal"><i class="fa fa-file-text"></i> SAP R/3系统权限申请及变更(非销售人员) <span class="pull-right fa fa-chevron-right"></span></a></li>
+                    <li><a href="#"  data-toggle="modal" data-target="#service-modal"><i class="fa fa-file-text"></i> 网络施工与布线<span class="pull-right fa fa-chevron-right"></span></a></li>
+                    <li><a href="#"  data-toggle="modal" data-target="#service-modal"><i class="fa fa-file-text"></i> SAP R/3系统权限申请及变更(非销售人员) <span class="pull-right fa fa-chevron-right"></span></a></li>
+                    <li><a href="#"  data-toggle="modal" data-target="#service-modal"><i class="fa fa-file-text"></i> 网络施工与布线<span class="pull-right fa fa-chevron-right"></span></a></li>
+                    <li><a href="#"  data-toggle="modal" data-target="#service-modal"><i class="fa fa-file-text"></i> 视频会议系统预定服务<span class="pull-right fa fa-chevron-right"></span></a></li>
+                    <li><a href="#"  data-toggle="modal" data-target="#service-modal"><i class="fa fa-file-text"></i> 合作伙伴用户入网权限申请及变更 <span class="pull-right fa fa-chevron-right"></span></a></li>
+                    <li><a href="#"  data-toggle="modal" data-target="#service-modal"><i class="fa fa-file-text"></i> 网络施工与布线<span class="pull-right fa fa-chevron-right"></span></a></li>
+                    <li><a href="#"  data-toggle="modal" data-target="#service-modal"><i class="fa fa-file-text"></i> 视频会议系统预定服务<span class="pull-right fa fa-chevron-right"></span></a></li>
+                    <li><a href="#"  data-toggle="modal" data-target="#service-modal"><i class="fa fa-file-text"></i> 硬盘加密密码恢复<span class="pull-right fa fa-chevron-right"></span></a></li>
+                    <li><a href="#"  data-toggle="modal" data-target="#service-modal"><i class="fa fa-file-text"></i> U-Key电子钥匙申请 <span class="pull-right fa fa-chevron-right"></span></a></li>
+                    <li><a href="#"  data-toggle="modal" data-target="#service-modal"><i class="fa fa-file-text"></i> 网络施工与布线<span class="pull-right fa fa-chevron-right"></span></a></li>
+                    <li><a href="#"  data-toggle="modal" data-target="#service-modal"><i class="fa fa-file-text"></i> 域账号/Email申请及变更<span class="pull-right fa fa-chevron-right"></span></a></li>
+                </ul>
+            </div>
+            <div class="tab-pane slimScrollDiv" id="service-resource"  >
+                <div class="box box-solid">
+                    <div class="box-body no-padding" style="display: block;">
+                        <ul class="nav nav-pills nav-stacked">
+                            <li><a href="#"  data-toggle="modal" data-target="#service-modal"><i class="fa fa-file-text"></i> 网络施工与布线<span class="pull-right fa fa-chevron-right"></span></a></li>
+                            <li><a href="#"  data-toggle="modal" data-target="#service-modal"><i class="fa fa-file-text"></i> 办公台式机资源申请与更新 <span class="pull-right fa fa-chevron-right"></span></a></li>
+                            <li><a href="#"  data-toggle="modal" data-target="#service-modal"><i class="fa fa-file-text"></i> 办公笔记本资源申请与更新 <span class="pull-right fa fa-chevron-right"></span></a></li>
+                            <li><a href="#"  data-toggle="modal" data-target="#service-modal"><i class="fa fa-file-text"></i> 其他设备或备件申请<span class="pull-right fa fa-chevron-right"></span></a></li>
+                            <li><a href="#"  data-toggle="modal" data-target="#service-modal"><i class="fa fa-file-text"></i> 图形工作站申请与更新<span class="pull-right fa fa-chevron-right"></span></a></li>
+                            <li><a href="#"  data-toggle="modal" data-target="#service-modal"><i class="fa fa-file-text"></i> RSA令牌卡申请(销售人员)<span class="pull-right fa fa-chevron-right"></span></a></li>
+                            <li><a href="#"  data-toggle="modal" data-target="#service-modal"><i class="fa fa-file-text"></i> RSA令牌卡申请(销售人员)<span class="pull-right fa fa-chevron-right"></span></a></li>
+                            <li><a href="#"  data-toggle="modal" data-target="#service-modal"><i class="fa fa-file-text"></i> 数码相机/摄像机设备申请服务<span class="pull-right fa fa-chevron-right"></span></a></li>
+                            <li><a href="#"  data-toggle="modal" data-target="#service-modal"><i class="fa fa-file-text"></i> 非标桌面软件申请服务 <span class="pull-right fa fa-chevron-right"></span></a></li>
+                            <li><a href="#"  data-toggle="modal" data-target="#service-modal"><i class="fa fa-file-text"></i> 非标桌面软件申请服务 <span class="pull-right fa fa-chevron-right"></span></a></li>
+                            <li><a href="#"  data-toggle="modal" data-target="#service-modal"><i class="fa fa-file-text"></i> 非标桌面软件申请服务 <span class="pull-right fa fa-chevron-right"></span></a></li>
+                            <li><a href="#"  data-toggle="modal" data-target="#service-modal"><i class="fa fa-file-text"></i> 非标桌面软件申请服务 <span class="pull-right fa fa-chevron-right"></span></a></li>
+                            <li><a href="#"  data-toggle="modal" data-target="#service-modal"><i class="fa fa-file-text"></i> 网络施工与布线<span class="pull-right fa fa-chevron-right"></span></a></li>
+                            <li><a href="#"  data-toggle="modal" data-target="#service-modal"><i class="fa fa-file-text"></i> 网络施工与布线<span class="pull-right fa fa-chevron-right"></span></a></li>
+                            <li><a href="#"  data-toggle="modal" data-target="#service-modal"><i class="fa fa-file-text"></i> HLS系统软件申请服务 <span class="pull-right fa fa-chevron-right"></span></a></li>
+                            <li><a href="#"  data-toggle="modal" data-target="#service-modal"><i class="fa fa-file-text"></i> 工程类软件申请 <span class="pull-right fa fa-chevron-right"></span></a></li>
+                            <li><a href="#"  data-toggle="modal" data-target="#service-modal"><i class="fa fa-file-text"></i> 员工PORTAL权限申请及变更（不含MDM）<span class="pull-right fa fa-chevron-right"></span></a></li>
+                            <li><a href="#"  data-toggle="modal" data-target="#service-modal"><i class="fa fa-file-text"></i> 操作系统Windows中英文变更服务 <span class="pull-right fa fa-chevron-right"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="tab-pane slimScrollDiv active" id="service-recent">
+                <div class="box box-solid">
+                    <div class="box-body no-padding" style="display: block;">
+                        <ul class="nav nav-pills nav-stacked">
+                            <li><a href="#"  data-toggle="modal" data-target="#service-modal"><i class="fa fa-file-text"></i> 网络施工与布线<small class="text-muted pull-right"><i class="fa fa-clock-o"></i> 1秒以前</small></a></li>
+                            <li><a href="#"  data-toggle="modal" data-target="#service-modal"><i class="fa fa-file-text"></i> 办公台式机资源申请与更新<small class="text-muted pull-right"><i class="fa fa-clock-o"></i> 3分钟以前</small></a></li>
+                            <li><a href="#"  data-toggle="modal" data-target="#service-modal"><i class="fa fa-file-text"></i> 办公笔记本资源申请与更新<small class="text-muted pull-right"><i class="fa fa-clock-o"></i> 1小时以前</small></span></a></li>
+                            <li><a href="#"  data-toggle="modal" data-target="#service-modal"><i class="fa fa-file-text"></i> 其他设备或备件申请<small class="text-muted pull-right"><i class="fa fa-clock-o"></i> 2小时以前</small></a></li>
+                            <li><a href="#"  data-toggle="modal" data-target="#service-modal"><i class="fa fa-file-text"></i> 图形工作站申请与更新  <small class="text-muted pull-right"><i class="fa fa-clock-o"></i> 2小时以前</small></a></li>
+                            <li><a href="#"  data-toggle="modal" data-target="#service-modal"><i class="fa fa-file-text"></i> RSA令牌卡申请(销售人员)<small class="text-muted pull-right"><i class="fa fa-clock-o"></i> 3小时以前</small></a></li>
+                            <li><a href="#"  data-toggle="modal" data-target="#service-modal"><i class="fa fa-file-text"></i> RSA令牌卡申请(非销售人员)<small class="text-muted pull-right"><i class="fa fa-clock-o"></i> 4小时以前</small></a></li>
+                            <li><a href="#"  data-toggle="modal" data-target="#service-modal"><i class="fa fa-file-text"></i> 经理级办公打印机申请<small class="text-muted pull-right"><i class="fa fa-clock-o"></i> 5小时以前</small></a></li>
+                            <li><a href="#"  data-toggle="modal" data-target="#service-modal"><i class="fa fa-file-text"></i> 经理人员手机申请服务<small class="text-muted pull-right"><i class="fa fa-clock-o"></i> 6小时以前</small></a></li>
+                            <li><a href="#"  data-toggle="modal" data-target="#service-modal"><i class="fa fa-file-text"></i> HLS系统软件申请服务<small class="text-muted pull-right"><i class="fa fa-clock-o"></i> 6小时以前</small></a></li>
+                            <li><a href="#"  data-toggle="modal" data-target="#service-modal"><i class="fa fa-file-text"></i> HLS系统软件申请服务<small class="text-muted pull-right"><i class="fa fa-clock-o"></i> 6小时以前</small></a></li>
+                            <li><a href="#"  data-toggle="modal" data-target="#service-modal"><i class="fa fa-file-text"></i> HLS系统软件申请服务<small class="text-muted pull-right"><i class="fa fa-clock-o"></i> 7小时以前</small></a></li>
+                            <li><a href="#"  data-toggle="modal" data-target="#service-modal"><i class="fa fa-file-text"></i> HLS系统软件申请服务<small class="text-muted pull-right"><i class="fa fa-clock-o"></i> 8小时以前</small></a></li>
+                            <li><a href="#"  data-toggle="modal" data-target="#service-modal"><i class="fa fa-file-text"></i>操作系统Windows中英文变更服务 <small class="text-muted pull-right"><i class="fa fa-clock-o"></i> 9小时以前</small></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="content hidden">
+        <div class="row" id="service-catalog-square">
+            <!--关于系统-->
+            <div class="col-md-3">
+                <div class="box box-widget widget-user-2">
+                    <div class="widget-user-header bg-yellow">
+                        <div class="row">
+                            <div class="col-md-4"><i class="fa fa-gear fa-4x pull-right"></i></div>
+                            <h3 class="widget-user-username">关于系统</h3>
+                            <h5 class="widget-user-desc">System Service</h5>
+                        </div>
+
+                    </div>
+                    <div class="box-footer no-padding">
+                        <ul class="nav nav-stacked">
+                            <li><a href="#"  data-toggle="modal" data-target="#service-modal">IT公告通知服务 <span class="pull-right fa fa-chevron-right"></span></a></li>
+                            <li><a href="#"  data-toggle="modal" data-target="#service-modal">投诉与建议 <span class="pull-right fa fa-chevron-right"></span></a></li>
+                            <li><a href="#"  data-toggle="modal" data-target="#service-modal">审批代理人申请 <span class="pull-right fa fa-chevron-right"></span></a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!--关于系统-->
+            <div class="col-md-3">
+                <div class="box box-widget widget-user-2">
+                    <div class="widget-user-header bg-yellow">
+                        <div class="row">
+                            <div class="col-md-4"><i class="fa fa-desktop fa-4x pull-right"></i></div>
+                            <h3 class="widget-user-username">硬件资源申请</h3>
+                            <h5 class="widget-user-desc">System Service</h5>
+                        </div>
+
+                    </div>
+                    <div class="box-footer no-padding">
+                        <ul class="nav nav-stacked">
+                            <li><a href="#"  data-toggle="modal" data-target="#service-modal">IT公告通知服务 <span class="pull-right fa fa-chevron-right"></span></a></li>
+                            <li><a href="#"  data-toggle="modal" data-target="#service-modal">投诉与建议 <span class="pull-right fa fa-chevron-right"></span></a></li>
+                            <li><a href="#"  data-toggle="modal" data-target="#service-modal">审批代理人申请 <span class="pull-right fa fa-chevron-right"></span></a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!--关于软件-->
+            <div class="col-md-3">
+                <div class="box box-widget widget-user-2">
+                    <div class="widget-user-header bg-yellow">
+                        <div class="row">
+                            <div class="col-md-4"><i class="fa fa-desktop fa-4x pull-right"></i></div>
+                            <h3 class="widget-user-username">软件资源申请</h3>
+                            <h5 class="widget-user-desc">System Service</h5>
+                        </div>
+
+                    </div>
+                    <div class="box-footer no-padding">
+                        <ul class="nav nav-stacked">
+                            <li><a href="#"  data-toggle="modal" data-target="#service-modal">IT公告通知服务 <span class="pull-right fa fa-chevron-right"></span></a></li>
+                            <li><a href="#"  data-toggle="modal" data-target="#service-modal">投诉与建议 <span class="pull-right fa fa-chevron-right"></span></a></li>
+                            <li><a href="#"  data-toggle="modal" data-target="#service-modal">审批代理人申请 <span class="pull-right fa fa-chevron-right"></span></a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--关于系统-->
+            <div class="col-md-3">
+                <div class="box box-widget widget-user-2">
+                    <div class="widget-user-header bg-yellow">
+                        <div class="row">
+                            <div class="col-md-4"><i class="fa fa-desktop fa-4x pull-right"></i></div>
+                            <h3 class="widget-user-username">硬件资源申请</h3>
+                            <h5 class="widget-user-desc">System Service</h5>
+                        </div>
+
+                    </div>
+                    <div class="box-footer no-padding">
+                        <ul class="nav nav-stacked">
+                            <li><a href="#"  data-toggle="modal" data-target="#service-modal">IT公告通知服务 <span class="pull-right fa fa-chevron-right"></span></a></li>
+                            <li><a href="#"  data-toggle="modal" data-target="#service-modal">投诉与建议 <span class="pull-right fa fa-chevron-right"></span></a></li>
+                            <li><a href="#"  data-toggle="modal" data-target="#service-modal">审批代理人申请 <span class="pull-right fa fa-chevron-right"></span></a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <!--关于软件-->
+            <!--关于系统-->
+            <div class="col-md-3">
+                <div class="box box-widget widget-user-2">
+                    <div class="widget-user-header bg-yellow">
+                        <div class="row">
+                            <div class="col-md-4"><i class="fa fa-desktop fa-4x pull-right"></i></div>
+                            <h3 class="widget-user-username">硬件资源申请</h3>
+                            <h5 class="widget-user-desc">System Service</h5>
+                        </div>
+
+                    </div>
+                    <div class="box-footer no-padding">
+                        <ul class="nav nav-stacked">
+                            <li><a href="#"  data-toggle="modal" data-target="#service-modal">IT公告通知服务 <span class="pull-right fa fa-chevron-right"></span></a></li>
+                            <li><a href="#"  data-toggle="modal" data-target="#service-modal">投诉与建议 <span class="pull-right fa fa-chevron-right"></span></a></li>
+                            <li><a href="#"  data-toggle="modal" data-target="#service-modal">审批代理人申请 <span class="pull-right fa fa-chevron-right"></span></a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!--关于系统-->
+            <div class="col-md-3">
+                <div class="box box-widget widget-user-2">
+                    <div class="widget-user-header bg-yellow">
+                        <div class="row">
+                            <div class="col-md-4"><i class="fa fa-desktop fa-4x pull-right"></i></div>
+                            <h3 class="widget-user-username">硬件资源申请</h3>
+                            <h5 class="widget-user-desc">System Service</h5>
+                        </div>
+
+                    </div>
+                    <div class="box-footer no-padding">
+                        <ul class="nav nav-stacked">
+                            <li><a href="#"  data-toggle="modal" data-target="#service-modal">IT公告通知服务 <span class="pull-right fa fa-chevron-right"></span></a></li>
+                            <li><a href="#"  data-toggle="modal" data-target="#service-modal">投诉与建议 <span class="pull-right fa fa-chevron-right"></span></a></li>
+                            <li><a href="#"  data-toggle="modal" data-target="#service-modal">审批代理人申请 <span class="pull-right fa fa-chevron-right"></span></a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--关于系统-->
+            <div class="col-md-3">
+                <div class="box box-widget widget-user-2">
+                    <div class="widget-user-header bg-yellow">
+                        <div class="row">
+                            <div class="col-md-4"><i class="fa fa-desktop fa-4x pull-right"></i></div>
+                            <h3 class="widget-user-username">硬件资源申请</h3>
+                            <h5 class="widget-user-desc">System Service</h5>
+                        </div>
+
+                    </div>
+                    <div class="box-footer no-padding">
+                        <ul class="nav nav-stacked">
+                            <li><a href="#"  data-toggle="modal" data-target="#service-modal">IT公告通知服务 <span class="pull-right fa fa-chevron-right"></span></a></li>
+                            <li><a href="#"  data-toggle="modal" data-target="#service-modal">投诉与建议 <span class="pull-right fa fa-chevron-right"></span></a></li>
+                            <li><a href="#"  data-toggle="modal" data-target="#service-modal">审批代理人申请 <span class="pull-right fa fa-chevron-right"></span></a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--关于系统-->
+            <div class="col-md-3">
+                <div class="box box-widget widget-user-2">
+                    <div class="widget-user-header bg-yellow">
+                        <div class="row">
+                            <div class="col-md-4"><i class="fa fa-desktop fa-4x pull-right"></i></div>
+                            <h3 class="widget-user-username">硬件资源申请</h3>
+                            <h5 class="widget-user-desc">System Service</h5>
+                        </div>
+
+                    </div>
+                    <div class="box-footer no-padding">
+                        <ul class="nav nav-stacked">
+                            <li><a href="#"  data-toggle="modal" data-target="#service-modal">IT公告通知服务 <span class="pull-right fa fa-chevron-right"></span></a></li>
+                            <li><a href="#"  data-toggle="modal" data-target="#service-modal">投诉与建议 <span class="pull-right fa fa-chevron-right"></span></a></li>
+                            <li><a href="#"  data-toggle="modal" data-target="#service-modal">审批代理人申请 <span class="pull-right fa fa-chevron-right"></span></a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</section>
+
+<!--流程分类结束-->
+
+<div class="modal" id="service-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title" id="myModalLabel">网络施工与布线</h4>
+            </div>
+            <div class="modal-body">
+                <h5 class="text-bold">服务内容</h5>
+                <hr />
+                <p>用户可以通过点击公司内部通讯录链接进行便利的自助查询，或者提交需要查询的号码，由服务台人员为您提供生产与办公用户提供常用办公固定电话号码的查询服务。(注：电话号码查询服务仅仅限于办公固定号码的查询，不包括手机、个人住宅等电话号码)。</p>
+                <p>
+                <p>
+                    通过一汽大众IT自助服务门户自助查询，如果使用中遇到问题，可以通过以下联系方式咨询：
+                </p>
+                <p>
+                    服务热线：<b>0431-85990175</b>
+                </p>
+                <p>
+                    邮件地址：<a href="mailto:helpdesk175@faw-vw.com">helpdesk175@faw-vw.com</a>
+                </p>
+                <br />
+                <h5 class="text-bold">
+                    服务质量</h5>
+                    <hr />
+                    <table class="table table-bordered table-striped table-hover">
+                        <tr>
+                            <th>服务KPI</th>
+                            <th>服务质量</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                人工受理时间
+                            </td>
+                            <td>5X8工作时间（周一至周五，8:00至16:30）</td>
+                        </tr>
+                        <tr>
+                            <td>服务交付时间</td>
+                            <td>
+                                自助查询：即刻 人工查询：4小时
+                            </td>
+                        </tr>
+                    </table>
+                
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default pull-left" data-dismiss="modal">关闭</button>
+                <button type="button" id="service-submit" class="btn btn-primary">提交</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div>
+
